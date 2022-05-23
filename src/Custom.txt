@@ -1,0 +1,34 @@
+CUSTOM ANALYSIS OPTIONS:
+
+- Skeleton Dilation 
+- Median Filter
+- Background Subtraction
+- Sobel Filter
+- Adaptive Histogram Equalization: This consists of using scikit image's adaptive histogram equalization option. It is then multipled to the background subtracted image to give the final contrast.
+- Rescale Intensity
+
+MASK OPTIONS
+
+- MultiOtsu Mask
+- Otsu Mask
+- Yen Mask
+- Li Mask
+
+MORPHOLOGY OPTIONS
+
+- Default Morphology (includes dilation and the closing. Used in the default analysis process)
+- Closing Morphology
+- Opening Morphology
+- Dilation Morphology
+- Erosion Morphology
+- Get Labels: Obtain the labels after the morpholgoy to get your ROIs
+
+UNDO/REDO
+* Previous image can only go back once.
+
+- Use Previous Image (will use the previously created image prior to the most recent action)
+- Use Most Recent Image (this will return you to the current image if you clicked previous image)
+- Use Original Image (reset to the originally loaded in image)
+- Use Previous Mask (will use the previously created mask prior to the most recent action)
+- Use Most Recent Image (this will return you to the current mask if you clicked previous mask)
+
