@@ -29,7 +29,7 @@ After you load in your images using the “Load Images” button, you can select
 
 This will ask for the "z" spacing of your images. This only effects the presentation of your images not the analysis. From there, depending on the size of the image, it can take a while for the analysis to complete. If it looks temporarily frozen, that’s possibly why. You can find more information about the Default Analysis option and what operations are performed, selected the Default Analysis under the help window.
 
-You can see examples of this file being used in the github page
+You can see examples of this file being used in the ReadTheDocs
 
 While this program is tailored to a specific use case. The default analysis presumes that you are loading using a skeleton mask (or a skeleton/mask file in general) along with an image to be analyzed. As a result, the program will require you to load two images and certain operations will presume that both files are loaded. However, you can use most of the operations the skeleton file.
 
