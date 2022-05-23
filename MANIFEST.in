@@ -1,5 +1,5 @@
-include NPCAnalysis/Custom.txt
-include NPCAnalysis/Default_Analysis_Info.txt
-include NPCAnalysis/Help.txt
-include NPCAnalysis/assets
-include C:\Users\Ashley H\Desktop\Work\Code\Data science projects\Image_Segementation_App\docs
+include src/Custom.txt
+include src/Default_Analysis_Info.txt
+include src/Help.txt
+include src/assets
+include NPC_Image_Analysis/docs
