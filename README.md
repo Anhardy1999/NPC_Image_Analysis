@@ -1,4 +1,4 @@
-# NPC_Image_Analysis
+# NPC Image Analysis
 **NPC Image Analysis** is a Python app for analyzing 3D images of Neural Progenitor Cells (NPCs). In particular, it
 was made to answer the specific question of analyzing the radial process of the cells. This application
 aims to allow you to use a default implementation to get you started, but also allows the user to
