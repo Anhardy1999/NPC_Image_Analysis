@@ -1,0 +1,265 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Usage &mdash; NPC Image Analysis 0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  <link rel="stylesheet" href="_static/fonts.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Default Analysis" href="Default%20Analysis%20Usage.html" />
+    <link rel="prev" title="Welcome to NPC Image Analysis’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> NPC Image Analysis
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#general-usage">General Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#why-use-a-skeleton-mask">Why use a skeleton mask?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Default%20Analysis%20Usage.html">Default Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Custom%20Analysis%20Usage.html">Custom Analysis Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Region%20Properties.html">Region Properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examples.html">Example Usage</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="_autosummary/Image_Analysis_App.html">Image_Analysis_App</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_autosummary/Image_Analysis.html">Image_Analysis</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">NPC Image Analysis</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+<div class="git-ribbon">
+  <a href="http://github.com/SwissDataScienceCenter" rel="me">Join us on GitHub</a>
+</div>
+
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Usage</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/Usage.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<p>Python 3.6 or above</p>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">npc-image-analysis</span></code></p>
+<p>However, the sourcecode of this program can be found at this <a class="reference external" href="https://github.com/Anhardy1999/NPC_Image_Analysis">github page</a></p>
+</div>
+<div class="section" id="general-usage">
+<h2>General Usage<a class="headerlink" href="#general-usage" title="Permalink to this headline">¶</a></h2>
+<p>This software is intended to be modifiable in order to answer particular needs to identify organelles and structures.
+Using this software, you will be able to look within the radial process of a specific cell of interest. This is used in conjuction with ImageJ’s Simple Neurite Tracer.</p>
+<dl class="simple">
+<dt>To use this software, you will need…</dt><dd><ul class="simple">
+<li><p>A greyscale tiff image that contains the channel for the organelles or structures of interest you would like analyzed</p></li>
+<li><p>The skeleton file created from the simple neurite tracer as a .tiff file. You cannot use the .trace file for this as it cannot be read in.</p></li>
+</ul>
+</dd>
+</dl>
+<p>After you load in your images using the “Load Images” button, you can selected “Perform Analysis”.
+You will be provided with two options, “Default Analysis” and “Custom Analysis”. If you would like to just see what a default analysis would look like, selected Default Analysis.</p>
+<p>This will ask for the Z spacing of your images. This only effects the presentation of your images not the analysis. From there, depending on the size of the image, it can take a while for the analysis to complete. If it looks temporarily frozen, that’s possibly why.
+You can find more information about the Default Analysis option and what operations are performed, selected the Default Analysis under the help window.</p>
+<p>You can see examples of this file being used in the <a class="reference external" href="https://github.com/Anhardy1999/NPC_Image_Analysis">github page</a></p>
+<p>While this program is tailored to a specific use case. The default analysis presumes that you are loading using a skeleton mask (or a skeleton/mask file in general) along with
+an image to be analyzed. As a result, the program will require you to load two images and certain operations will presume that both files are loaded. However,
+you can use most of the operations the skeleton file.</p>
+</div>
+<div class="section" id="why-use-a-skeleton-mask">
+<h2>Why use a skeleton mask?<a class="headerlink" href="#why-use-a-skeleton-mask" title="Permalink to this headline">¶</a></h2>
+<p>Originally this was used to isolate the file to a specific location for the analysis, however, this also reduced the overall file size and image size lowering the memory usage and
+time required to process images.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="Default%20Analysis%20Usage.html" class="btn btn-neutral float-right" title="Default Analysis" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to NPC Image Analysis’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2022, Ashley Hardy.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

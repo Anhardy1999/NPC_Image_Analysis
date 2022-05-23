@@ -1,0 +1,482 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Example Usage &mdash; NPC Image Analysis 0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  <link rel="stylesheet" href="_static/fonts.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Image_Analysis_App" href="_autosummary/Image_Analysis_App.html" />
+    <link rel="prev" title="Region Properties" href="Region%20Properties.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> NPC Image Analysis
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Default%20Analysis%20Usage.html">Default Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Custom%20Analysis%20Usage.html">Custom Analysis Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Region%20Properties.html">Region Properties</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Example Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#using-npc-image-analysis">Using NPC Image Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#choosing-an-analysis-option">Choosing an analysis option</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#default-analysis">Default Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#custom-analysis">Custom Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-roi-properties">Getting ROI Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example-data-returned">Example Data Returned</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="_autosummary/Image_Analysis_App.html">Image_Analysis_App</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_autosummary/Image_Analysis.html">Image_Analysis</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">NPC Image Analysis</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+<div class="git-ribbon">
+  <a href="http://github.com/SwissDataScienceCenter" rel="me">Join us on GitHub</a>
+</div>
+
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Example Usage</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/Examples.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="example-usage">
+<h1>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="using-npc-image-analysis">
+<h2>Using NPC Image Analysis<a class="headerlink" href="#using-npc-image-analysis" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="_images/1.jpg"><img alt="_images/1.jpg" class="align-center" src="_images/1.jpg" style="width: 400px;" /></a>
+<p>Above is what the application will look like upon initialization. The
+application’s simple interface was designed to not overwhelm the user
+with too much information and options at one time.</p>
+<p>We’ll start with loading in the images.
+When the loading button is clicked, the status screen will inform you of the order
+of the images.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You must import the images in a specific order:</p>
+<ol class="arabic simple">
+<li><p>Skeleton file first (this must be a .tiff or .tif file)</p></li>
+<li><p>Your image for analysis</p></li>
+</ol>
+<p>They must be the same size, or else the application will not be able
+to process the images.</p>
+</div>
+<p>After the images are loaded, the “Status” screen of the application will list
+the images loaded and will ask the user to confirm that these are correct.</p>
+<a class="reference internal image-reference" href="_images/2.jpg"><img alt="_images/2.jpg" class="align-center" src="_images/2.jpg" style="width: 400px;" /></a>
+</div>
+<div class="section" id="choosing-an-analysis-option">
+<h2>Choosing an analysis option<a class="headerlink" href="#choosing-an-analysis-option" title="Permalink to this headline">¶</a></h2>
+<p>Clicking “Perform Analysis” will open another small window. There are two options to choose for analysis: The “Default Analysis” option and the “Custom Analysis” option.</p>
+<div class="section" id="default-analysis">
+<h3>Default Analysis<a class="headerlink" href="#default-analysis" title="Permalink to this headline">¶</a></h3>
+<p>When you select “Default Analysis” this will ask you to input the image spacing. This is asking for the “z” spacing of your
+images.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The spacing indicates the distance between each “z” plane image to create the depth of the image.</p>
+</div>
+<p>For this example, we are using .5.</p>
+<a class="reference internal image-reference" href="_images/3.jpg"><img alt="_images/3.jpg" class="align-center" src="_images/3.jpg" style="width: 400px;" /></a>
+<p>Pressing “Okay” will initiate the analysis. A napari viewer will open. While this process is occuring, the
+screen may remain white and the app may be unresponsive as it operates. Don’t panic, this is a sign that it is working.</p>
+<p>If it remains white and the app is unresponsive for an extended period of time, you should consider the size of your images
+as this will contribute to the amount of time processing will take.</p>
+<p>When the process is complete, you will be able to interact with the napari viewer and see what the final results are.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are unhappy with this final result, you can begin a new process with the Custom Analysis option.
+This will start a new napari viewer and cannot continue with the default analysis as you will be restarting
+from the beginning.</p>
+<p>You can follow through the default analysis process and tweak it by visiting the <a class="reference internal" href="Default%20Analysis%20Usage.html"><span class="doc">Default Analysis</span></a> page.</p>
+</div>
+</div>
+<div class="section" id="custom-analysis">
+<h3>Custom Analysis<a class="headerlink" href="#custom-analysis" title="Permalink to this headline">¶</a></h3>
+<p>Selecting “Custom Analysis” will expand the current window with the image processing options. Additionally,
+it will ask the same question as in the default analysis “What is the image spacing?” Again, you will provide the “z” spacing
+of your images.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The spacing indicates the distance between each “z” plane image to create the depth of the image.</p>
+</div>
+<p>Here we will be using .5</p>
+<a class="reference internal image-reference" href="_images/7.jpg"><img alt="_images/7.jpg" class="align-center" src="_images/7.jpg" style="width: 600px;" /></a>
+<p>Upon entering your spacing, a napari viewer window will open. It will be empty and allow you the option to begin
+your image processing.</p>
+<a class="reference internal image-reference" href="_images/8.jpg"><img alt="_images/8.jpg" class="align-center" src="_images/8.jpg" style="width: 600px;" /></a>
+<p>We will start with a skeleton dilation. Clicking “Skeleton Dilation” will prompt you to input how much you would like
+to dilate the skeleton image.</p>
+<p>The default is 10. For this example, we will use 10.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This operation can take some time, so if it appears that application is frozen, keep in mind the size of the images as this
+is a contributing factor to the processing power and time consumption of each operation.</p>
+</div>
+<a class="reference internal image-reference" href="_images/9.jpg"><img alt="_images/9.jpg" class="align-center" src="_images/9.jpg" style="width: 600px;" /></a>
+<p>This process will return the dilated skeleton as well as the cropped image called ‘ROI’. The “status” window will also update with the process
+that was just performed and what value was performed to allow the user to keep track of what operations they have performed so far.</p>
+<p>Next, we will apply a median filter. Upon clicking “Median Filter” the application will prompt you to
+input the cube width to use. The default is 3 which we will use for this example.</p>
+<p>This will return the image after the median filter has been applied.</p>
+<a class="reference internal image-reference" href="_images/10.jpg"><img alt="_images/10.jpg" class="align-center" src="_images/10.jpg" style="width: 600px;" /></a>
+<p>We will apply a background subtraction after this to even out the surrounding background and make it easier for the
+final step of identify our regions of interest easier. Clicking this will prompt the user to input a gaussian sigma
+or how strong the blur will be.</p>
+<p>The default is 7. In this case, we’ll use 10.</p>
+<a class="reference internal image-reference" href="_images/11.jpg"><img alt="_images/11.jpg" class="align-center" src="_images/11.jpg" style="width: 600px;" /></a>
+<p>While we could apply the sobel filter which will define the edges of the objects within this image, it’s not really
+necessary here. We want to make the images within the radial process is clear so defining the edges of this particular image
+may not work in our favor.</p>
+<p>We’ll enhance the contrast of the image now. One of the byproducts of a background subtraction is that it can also lower the contrast
+of the overall image as we try to smooth out the background. We’ll try the “Rescale Intensity” option first.</p>
+<p>Clicking this button will prompt you to enter two values, the minimum intensity value of the image and the maximum intensity values in the image.
+They are percentages in this case, but the defaults for rescaled intensity is .5 and 99.5 for minimum and maximum respectively.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Choosing the minimum and maximum intensity values means that you will be deciding what the minimum intensity values allowed within the total
+image allowed and the maximum intensity values allowed in the overall image. If you choose .5 and 99.5, you will be clipping the darkest and
+brightest 0.5% of pixels within the image thus increasing the overall contrast of the image.</p>
+</div>
+<p>We will use 99.65 and 99.98 for the minimum and maximum values respectively.</p>
+<a class="reference internal image-reference" href="_images/12.jpg"><img alt="_images/12.jpg" class="align-center" src="_images/12.jpg" style="width: 600px;" /></a>
+<p>This returns the above. While it is not terrible, it’s not exactly what we’re looking for right now and adjusting the contrast this way will require
+a little more playing around.</p>
+<p>We’ll click the previous image button to go back one step. This will add the previous image we were working with to the viewer once more and the status will
+update with our selection.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can only go back one step at the moment.</p>
+</div>
+<p>We should return to the background subtracted image now. We’ll go ahead and use the “Adaptive Histogram Equalizaiton” option which will operate automatically.
+The purpose of this option is to provide an automatic contrast that doesn’t require any input from the user. The Rescale Intensity option allows more freedom for the user
+and can be applied after the adaptive histogram equalization operation is performed to continue to tweak the contrast.</p>
+<a class="reference internal image-reference" href="_images/13.jpg"><img alt="_images/13.jpg" class="align-center" src="_images/13.jpg" style="width: 600px;" /></a>
+<p>We now have our final contrasted image. From here, it’s time to select a mask option. In the default analysis, the multiotsu mask is used. If you don’t like the mask that is used
+you can use the “Use Most Recent Image” option to return to the image prior to using the mask and play around with the options you would like to use.</p>
+<p>We’ll use the multiotsu mask with 2 classes.</p>
+<a class="reference internal image-reference" href="_images/14.jpg"><img alt="_images/14.jpg" class="align-center" src="_images/14.jpg" style="width: 600px;" /></a>
+<p>Great! This is looking pretty good, but we can probably define this mask a little bit. The default morphology option allows the user to use the morphological steps that are used in the
+Default Analysis. The default analysis uses the Dilation and Closing morphological adjustments in that order.</p>
+<p>We can see what each of those look like here by using them in that order instead of pressing Default Morphology.</p>
+<a class="reference internal image-reference" href="_images/15.jpg"><img alt="_images/15.jpg" class="align-center" src="_images/15.jpg" style="width: 600px;" /></a>
+<p>This final mask looks pretty good. Once you’re pleased with the final mask, you can generate labels by pressing the “Get Labels” options. Labels will be generated and added to the viewer.</p>
+<a class="reference internal image-reference" href="_images/16.jpg"><img alt="_images/16.jpg" class="align-center" src="_images/16.jpg" style="width: 600px;" /></a>
+<p>From here, we can start getting data from our analysis.</p>
+</div>
+</div>
+<div class="section" id="getting-roi-properties">
+<h2>Getting ROI Properties<a class="headerlink" href="#getting-roi-properties" title="Permalink to this headline">¶</a></h2>
+<p>From here you can begin the process of obtaining properties of the identified regions of interest (ROI) by clicking the
+“Get ROI Properties” button.</p>
+<p>Clicking this button will open up a new window allowing you to select the data you would like to obtain.
+For this example, we’ll select “area”, “mean_intensity”, and “centroids”.</p>
+<p>After that, click the “Start ROI Properties Analysis” button.</p>
+<a class="reference internal image-reference" href="_images/5.jpg"><img alt="_images/5.jpg" class="align-center" src="_images/5.jpg" style="width: 400px;" /></a>
+<p>After this process is completed, you will be presented with a table containing data for each region of interest and the properties
+you selected.</p>
+<a class="reference internal image-reference" href="_images/6.jpg"><img alt="_images/6.jpg" class="align-center" src="_images/6.jpg" style="width: 600px;" /></a>
+<p>Clicking the “Export ROI Properties” button will open the save dialog and allow you to save your data.
+If you would like to get additional properties, you can return to the window with your property options and
+generate a new table.</p>
+</div>
+<div class="section" id="example-data-returned">
+<h2>Example Data Returned<a class="headerlink" href="#example-data-returned" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This does not include all of the data that can be returned. Additionally, all data returned regarding points or coordinates
+(this includes bbox, centroids, coords) are returned in z, x, y order (plane, row, column)</p>
+</div>
+<table class="colwidths-given docutils align-default" id="id1">
+<caption><span class="caption-text">Sample Data</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>label</p></th>
+<th class="head"><p>area</p></th>
+<th class="head"><p>mean_intensity</p></th>
+<th class="head"><p>centroid-0</p></th>
+<th class="head"><p>centroid-1</p></th>
+<th class="head"><p>centroid-2</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>1467</p></td>
+<td><p>8187.162236</p></td>
+<td><p>12.07089298</p></td>
+<td><p>27.30811179</p></td>
+<td><p>278.9284254</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>41</p></td>
+<td><p>6525.073171</p></td>
+<td><p>7.512195122</p></td>
+<td><p>7.43902439</p></td>
+<td><p>332.5853659</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>147</p></td>
+<td><p>6552.14966</p></td>
+<td><p>9.789115646</p></td>
+<td><p>12.14965986</p></td>
+<td><p>308.6326531</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>2</p></td>
+<td><p>8102.5</p></td>
+<td><p>8</p></td>
+<td><p>12.5</p></td>
+<td><p>291.5</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>83</p></td>
+<td><p>7006.204819</p></td>
+<td><p>34.97590361</p></td>
+<td><p>114.0120482</p></td>
+<td><p>183.4939759</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>232</p></td>
+<td><p>7184.99569</p></td>
+<td><p>42.68103448</p></td>
+<td><p>158.2931034</p></td>
+<td><p>141.8965517</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>168</p></td>
+<td><p>6671.392857</p></td>
+<td><p>53.32738095</p></td>
+<td><p>232.6785714</p></td>
+<td><p>86.57142857</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>1873</p></td>
+<td><p>8293.038441</p></td>
+<td><p>58.56326749</p></td>
+<td><p>265.2530699</p></td>
+<td><p>48.32407902</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>113</p></td>
+<td><p>6718.911504</p></td>
+<td><p>63.91150442</p></td>
+<td><p>294.8495575</p></td>
+<td><p>23.45132743</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>26</p></td>
+<td><p>6214.153846</p></td>
+<td><p>65.5</p></td>
+<td><p>301.6923077</p></td>
+<td><p>15.69230769</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>12</p></td>
+<td><p>6545.666667</p></td>
+<td><p>66.5</p></td>
+<td><p>305</p></td>
+<td><p>12</p></td>
+</tr>
+</tbody>
+</table>
+<p>The data above is generated using sci-kit image’s regionprops table module. If you would like to
+read more about it and the function you can find it <a class="reference external" href="https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.regionprops_table">here</a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="_autosummary/Image_Analysis_App.html" class="btn btn-neutral float-right" title="Image_Analysis_App" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Region%20Properties.html" class="btn btn-neutral float-left" title="Region Properties" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2022, Ashley Hardy.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

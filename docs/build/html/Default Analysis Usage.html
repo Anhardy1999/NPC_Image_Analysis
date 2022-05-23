@@ -1,0 +1,255 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Default Analysis &mdash; NPC Image Analysis 0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  <link rel="stylesheet" href="_static/fonts.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Custom Analysis Options" href="Custom%20Analysis%20Usage.html" />
+    <link rel="prev" title="Usage" href="Usage.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> NPC Image Analysis
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Default Analysis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#image-processing-steps">Image Processing Steps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Custom%20Analysis%20Usage.html">Custom Analysis Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Region%20Properties.html">Region Properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examples.html">Example Usage</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="_autosummary/Image_Analysis_App.html">Image_Analysis_App</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_autosummary/Image_Analysis.html">Image_Analysis</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">NPC Image Analysis</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+<div class="git-ribbon">
+  <a href="http://github.com/SwissDataScienceCenter" rel="me">Join us on GitHub</a>
+</div>
+
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Default Analysis</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/Default Analysis Usage.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="default-analysis">
+<h1>Default Analysis<a class="headerlink" href="#default-analysis" title="Permalink to this headline">¶</a></h1>
+<p>The default analysis was created based off an analysis process that worked generally
+will on all of the images that this project was originally created for.</p>
+<p>As such, this process is automatic when you click the button to start the analysis
+preventing any intervention.</p>
+<p>This can be used as a general guide for what analysis processes might work.
+Image analysis is a process that doesn’t work for all images so it can require tweaking
+to better suit images loaded into the application.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The default analysis presumes that you are using the skeleton file and the image to be analyzed.</p>
+</div>
+<div class="section" id="image-processing-steps">
+<h2>Image Processing Steps<a class="headerlink" href="#image-processing-steps" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><p>Skeleton Dilation (Default dilation is 10)</p></li>
+<li><p>Cropping of the image to the length/size/volume of the skeleton</p></li>
+<li><p>Median filter with a cube width of 3</p></li>
+<li><p>Background subtraction using a gaussion blur of strength 7.</p></li>
+<li><p>Adaptive Histogram Equalization: This consists of using scikit image’s adaptive histogram equalization option. It is then multipled to the background subtracted image to give the final contrast.</p></li>
+<li><p>Multiotsu mask at 2 classes (there are presumed only 2 classes, background and regions of interest)</p></li>
+<li><p>Default morphology: Dilation morphology and then closing morphology</p></li>
+<li><p>Labels are added to the image.</p></li>
+</ul>
+</div></blockquote>
+<p>This information can also be found in the “Help” section of the application.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="Custom%20Analysis%20Usage.html" class="btn btn-neutral float-right" title="Custom Analysis Options" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Usage.html" class="btn btn-neutral float-left" title="Usage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2022, Ashley Hardy.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

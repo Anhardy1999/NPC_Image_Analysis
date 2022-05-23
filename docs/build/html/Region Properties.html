@@ -1,0 +1,296 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Region Properties &mdash; NPC Image Analysis 0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  <link rel="stylesheet" href="_static/fonts.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Example Usage" href="Examples.html" />
+    <link rel="prev" title="Custom Analysis Options" href="Custom%20Analysis%20Usage.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> NPC Image Analysis
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Default%20Analysis%20Usage.html">Default Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Custom%20Analysis%20Usage.html">Custom Analysis Options</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Region Properties</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#area">area</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bbox">bbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bbox-area">bbox_area</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#max-intensity">max_intensity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mean-intensity">mean_intensity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#min-intensity">min_intensity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#equivalent-diameter">equivalent_diameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#minor-axis-length">minor_axis_length</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#major-axis-length">major_axis_length</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#centroid">centroid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#coords">coords</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Examples.html">Example Usage</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="_autosummary/Image_Analysis_App.html">Image_Analysis_App</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_autosummary/Image_Analysis.html">Image_Analysis</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">NPC Image Analysis</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+<div class="git-ribbon">
+  <a href="http://github.com/SwissDataScienceCenter" rel="me">Join us on GitHub</a>
+</div>
+
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Region Properties</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/Region Properties.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="region-properties">
+<h1>Region Properties<a class="headerlink" href="#region-properties" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="area">
+<h2>area<a class="headerlink" href="#area" title="Permalink to this headline">¶</a></h2>
+<p>The property calculates the area of the region of interest. For 3D options this
+really means volume as it is taking into account the x, y, and z planes.</p>
+</div>
+<div class="section" id="bbox">
+<h2>bbox<a class="headerlink" href="#bbox" title="Permalink to this headline">¶</a></h2>
+<p>Calculates the boundary box points locations for each plane. This returns six columns
+as it accounts for the highest and lowest x, y, and z planes coordinates.</p>
+</div>
+<div class="section" id="bbox-area">
+<h2>bbox_area<a class="headerlink" href="#bbox-area" title="Permalink to this headline">¶</a></h2>
+<p>Calculates the bounding box area based on the bounding box coordinate points. As this is
+3D this is closer to volume than area.</p>
+</div>
+<div class="section" id="max-intensity">
+<h2>max_intensity<a class="headerlink" href="#max-intensity" title="Permalink to this headline">¶</a></h2>
+<p>Calculates the maximum intensity for each of the ROIs identified. This takes into account the
+passed in intensity_image. For this program, it uses the original image so that the intensity
+values are not impacted by the processing steps.</p>
+</div>
+<div class="section" id="mean-intensity">
+<h2>mean_intensity<a class="headerlink" href="#mean-intensity" title="Permalink to this headline">¶</a></h2>
+<p>Calculates the mean intensity for each of the the ROIs identified. This takes into account the
+passed in intensity_image. For this program, it uses the original image so that the intensity
+values are not impacted by the processing steps.</p>
+</div>
+<div class="section" id="min-intensity">
+<h2>min_intensity<a class="headerlink" href="#min-intensity" title="Permalink to this headline">¶</a></h2>
+<p>Calculates the min intensity for each of the the ROIs identified. This takes into account the
+passed in intensity_image. For this program, it uses the original image so that the intensity
+values are not impacted by the processing steps.</p>
+</div>
+<div class="section" id="equivalent-diameter">
+<h2>equivalent_diameter<a class="headerlink" href="#equivalent-diameter" title="Permalink to this headline">¶</a></h2>
+<p>Calculates the diameter of a circle with the same area as the region.</p>
+</div>
+<div class="section" id="minor-axis-length">
+<h2>minor_axis_length<a class="headerlink" href="#minor-axis-length" title="Permalink to this headline">¶</a></h2>
+<p>The length of the minor axis of the ellipse that has the same normalized second central moments
+as the region; that is, the same normalized variance as the region which is a measure used to quantify
+whether the set obsevered occurences are clustered or dispersed.</p>
+</div>
+<div class="section" id="major-axis-length">
+<h2>major_axis_length<a class="headerlink" href="#major-axis-length" title="Permalink to this headline">¶</a></h2>
+<p>The length of the major axis of the ellipse that has the same normalized second central moments
+as the region; that is, the same normalized variance as the region which is a measure used to quantify
+whether the set obsevered occurences are clustered or dispersed.</p>
+</div>
+<div class="section" id="centroid">
+<h2>centroid<a class="headerlink" href="#centroid" title="Permalink to this headline">¶</a></h2>
+<p>This returns the coordinates of the central point within the specific region of interest. Creates three columns
+with x, y, and z coordinates.</p>
+</div>
+<div class="section" id="coords">
+<h2>coords<a class="headerlink" href="#coords" title="Permalink to this headline">¶</a></h2>
+<p>Returns the coordinate list (plane, row, col) of the region</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="Examples.html" class="btn btn-neutral float-right" title="Example Usage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Custom%20Analysis%20Usage.html" class="btn btn-neutral float-left" title="Custom Analysis Options" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2022, Ashley Hardy.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
