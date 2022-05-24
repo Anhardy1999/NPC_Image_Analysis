@@ -11,7 +11,7 @@ NPC Image Analysis utilizes skimage's image processing tools as well as napari f
 
 ## How to use
 
-Full information can be found on the [ReadTheDocs]() page.
+Full information can be found on the [ReadTheDocs](https://npc-image-analysis.readthedocs.io/en/latest/index.html) page.
 
 ## Installation
 
