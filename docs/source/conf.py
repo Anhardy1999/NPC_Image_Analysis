@@ -36,7 +36,8 @@ release = '0.1'
 extensions = [
     'sphinx.ext.duration',
     'sphinx.ext.autodoc',
-    'sphinx.ext.autosummary'
+    'sphinx.ext.autosummary',
+    'python_docs_theme'
 ]
 
 autosummary_generate = True
