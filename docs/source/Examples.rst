@@ -40,6 +40,8 @@ Clicking "Perform Analysis" will open another small window. There are two option
 Default Analysis
 -----------------
 
+Default analysis will perform all of the analysis for you and will not allow you intervene. Given the nature of this program, the application may appear to freeze or stop responding as it performs the analysis. It will launch the napari viewer image and continue on with the analysis. The viewer will only update after all of the analysis has been completed. The amount of time it takes to complete this processing depends on the size of the images.
+
 When you select "Default Analysis" this will ask you to input the image spacing. This is asking for the "z" spacing of your
 images. 
 
