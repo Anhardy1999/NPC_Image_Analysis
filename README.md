@@ -9,13 +9,15 @@ A Python package to assist in performing image analysis on Neural Progenitor Cel
 
 NPC Image Analysis utilizes skimage's image processing tools as well as napari for viewing the images in 3D.
 
-## How to use
-
-Full information can be found on the [ReadTheDocs](https://npc-image-analysis.readthedocs.io/en/latest/index.html) page.
-
 ## Installation
 
 ```pip install npc-analyze-image```
 
+## How to use
+
+Once the package is installed run 
+```python -m NPCAnalysis``` 
+
+The program shall initiate. Full information on usage and using the functions can be found on the [ReadTheDocs](https://npc-image-analysis.readthedocs.io/en/latest/index.html) page.
 
 
