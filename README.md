@@ -13,5 +13,9 @@ NPC Image Analysis utilizes skimage's image processing tools as well as napari f
 
 Full information can be found on the [ReadTheDocs]() page.
 
-Requirements
+## Installation
+
+```pip install npc-analyze-image```
+
+
 
