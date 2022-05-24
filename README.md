@@ -7,7 +7,11 @@ A Python package to assist in performing image analysis on Neural Progenitor Cel
 
 **NPC Analysis** aims to bridge the gap between those who want to perform image analysis but are less technical and are blocked by complicated and lengthy python code documentation.  This provides a simple GUI for users to perform image analysis, specifically on the radial process of Neural Progenitor Cells. However, this application can likely be used for any analysis that requires the inital use of a mask to limit the analysis to a specific region. 
 
+NPC Image Analysis utilizes skimage's image processing tools as well as napari for viewing the images in 3D.
+
 ## How to use
 
 Full information can be found on the [ReadTheDocs]() page.
+
+Requirements
 
