@@ -4,9 +4,9 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="example-package-anhardy",
+    name="npc-image-analysis",
     version="0.0.1",
-    author="Example Author",
+    author="Ashley hardy",
     author_email="ahardy.contact@gmail.com",
     description=" A Python package to assist in performing image analysis on Neural Progenitor Cells (NPCS).",
     long_description=long_description,
