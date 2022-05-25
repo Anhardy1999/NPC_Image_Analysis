@@ -53,7 +53,9 @@ autodoc_mock_imports = [
     "napari",
     "pandas",
     "numpy",
-    "msilib"
+    "msilib",
+    "skimage",
+    "os"
 ]
 
 
