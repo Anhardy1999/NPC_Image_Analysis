@@ -1098,7 +1098,7 @@ class ImageSeg_App():
             self.bttn(frame_2, "Skeleton Dilation", "#141414", "#C6C7D6", command = lambda: self.skeleton_dilate())
             self.bttn(frame_2, "Median Filter", "#141414", "#C6C7D6",  command = lambda: self.median_image())
             self.bttn(frame_2, "Background Subtraction", "#141414", "#C6C7D6", command = lambda: self.background_subtract())
-            self.bttn(frame_2, "Sobel Filter", "#141414", "#C6C7D6", command = lambda: self.skeleton_dilate())
+            self.bttn(frame_2, "Sobel Filter", "#141414", "#C6C7D6", command = lambda: self.sobel_image())
             self.bttn(frame_2, "Adaptive Histogram \nEqualization", "#141414", "#C6C7D6", command = lambda: self.ahe())
             self.bttn(frame_2, "Rescale Intensity", "#141414", "#C6C7D6", command = lambda: self.rescale_intensity())
 
