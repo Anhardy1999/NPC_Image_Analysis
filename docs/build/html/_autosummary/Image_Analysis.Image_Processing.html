@@ -1,0 +1,691 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Image_Analysis.Image_Processing &mdash; NPC Image Analysis 0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Image_Analysis" href="Image_Analysis.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> NPC Image Analysis
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../Usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Default%20Analysis%20Usage.html">Default Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Custom%20Analysis%20Usage.html">Custom Analysis Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Region%20Properties.html">Region Properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Examples.html">Example Usage</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Image_Analysis_App.html">Image_Analysis_App</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Image_Analysis.html">Image_Analysis</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Image_Analysis.Image_Processing</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">NPC Image Analysis</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+<div class="git-ribbon">
+  <a href="http://github.com/SwissDataScienceCenter" rel="me">Join us on GitHub</a>
+</div>
+
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="Image_Analysis.html">Image_Analysis</a> &raquo;</li>
+        
+      <li>Image_Analysis.Image_Processing</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/_autosummary/Image_Analysis.Image_Processing.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="image-analysis-image-processing">
+<h1>Image_Analysis.Image_Processing<a class="headerlink" href="#image-analysis-image-processing" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Image_Analysis.Image_Processing">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Image_Analysis.</span></span><span class="sig-name descname"><span class="pre">Image_Processing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skeleton</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spacing</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">viewer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis.Image_Processing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A class that will perform image processing operations.</p>
+<p>…</p>
+<dl class="simple">
+<dt>image: ndarray</dt><dd><p>an image to be processed</p>
+</dd>
+<dt>skeleton: ndarray</dt><dd><p>the skeleton of the image to be processed</p>
+</dd>
+<dt>spacing: float</dt><dd><p>the z spacing of the image</p>
+</dd>
+<dt>viewer: napari.viewer</dt><dd><p>the viewer to be used to view the image layers in 3D</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>skeleton_dilation(dilation=10)</dt><dd><p>Dilates the skeleton of the image as many times as you indicate. 
+Crops the image to only the region of interest</p>
+</dd>
+<dt>get_cropped()</dt><dd><p>returns the cropped image</p>
+</dd>
+<dt>median_filter(image, cube_width)</dt><dd><p>Performs the median filter operation from skimage on the image passed. 
+Uses the cube width provided.</p>
+</dd>
+<dt>background_subtract(image, gauss_sigma)</dt><dd><p>Subtracts the background from the passed in image. Uses the gaussian 
+filter from skimage on the image passed in.</p>
+</dd>
+<dt>sobel(image)</dt><dd><p>Performs the sobel transformation on the passed in image using the sobel 
+filter from skimage</p>
+</dd>
+<dt>ahe_contrast(image)</dt><dd><p>Performs the adaptive histogram equalization on the passed in image using 
+the equalize_adapthist from skimage. Multiplies the image to the image 
+passed in to improve the contrast</p>
+</dd>
+<dt>rescaled_intensity(image, vmin, vmax)</dt><dd><p>Performs the rescale intensity operation on the passed in image using the 
+operation from skimage</p>
+</dd>
+<dt>multiotsu_mask(image, classes)</dt><dd><p>Performs the multiotsu mask operation using threshold_multiots from skimage 
+using the number of classes specified</p>
+</dd>
+<dt>otsu_mask(image)</dt><dd><p>Performs the otsu mask operation using threshold_otsu from skimage</p>
+</dd>
+<dt>li_mask(image)</dt><dd><p>Performs the li mask operation using threshold_li from skimage</p>
+</dd>
+<dt>yen_mask(image)</dt><dd><p>Performs the yen mask operation using threshold_yen from skimage</p>
+</dd>
+<dt>default_morphology(image)</dt><dd><p>Uses a default morphology operation consisting of closing and dilation 
+morphological operations.</p>
+</dd>
+<dt>closing(image)</dt><dd><p>Performs the closing operation on the provided mask</p>
+</dd>
+<dt>opening(image)</dt><dd><p>Performs the opening operation on the provided mask</p>
+</dd>
+<dt>dilation(image)</dt><dd><p>Performs the dilation operation on the provided mask</p>
+</dd>
+<dt>erosion(image)</dt><dd><p>Performs the erosion operation on the provided mask</p>
+</dd>
+<dt>labels(image)</dt><dd><p>Generates labels based on the mask created</p>
+</dd>
+<dt>region_props(labels, intensity_image, properties)</dt><dd><p>Generates the region properties from the labels depending on the properties 
+selected</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis.Image_Processing.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skeleton</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spacing</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">viewer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis.Image_Processing.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>image<span class="classifier">ndarray</span></dt><dd><p>The image to use for analysis</p>
+</dd>
+<dt>skeleton<span class="classifier">ndarray</span></dt><dd><p>The binary image used to identify the area of interest of the image</p>
+</dd>
+<dt>spacing<span class="classifier">float</span></dt><dd><p>The z spacing of the images being passed</p>
+</dd>
+<dt>viewer<span class="classifier">napari viewer</span></dt><dd><p>The viewer to use for visualization of the images</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis.Image_Processing.__init__" title="Image_Analysis.Image_Processing.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(image, skeleton, spacing, viewer)</p></td>
+<td><p>Parameters
+
+image
+
+ndarray
+
+The image to use for analysis
+
+skeleton
+
+ndarray
+
+The binary image used to identify the area of interest of the image
+
+spacing
+
+float
+
+The z spacing of the images being passed
+
+viewer
+
+napari viewer
+
+The viewer to use for visualization of the images</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Image_Analysis.Image_Processing.ahe_contrast" title="Image_Analysis.Image_Processing.ahe_contrast"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ahe_contrast</span></code></a>([image])</p></td>
+<td><p>Performs the adaptive histogram equalization operation and multiplies the provided image and the AHE image</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis.Image_Processing.background_subtract" title="Image_Analysis.Image_Processing.background_subtract"><code class="xref py py-obj docutils literal notranslate"><span class="pre">background_subtract</span></code></a>([image, gauss_sigma])</p></td>
+<td><p>Subtracts the background from the image provided</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Image_Analysis.Image_Processing.closing" title="Image_Analysis.Image_Processing.closing"><code class="xref py py-obj docutils literal notranslate"><span class="pre">closing</span></code></a>([mask])</p></td>
+<td><p>Performs the closing morphology operation from skimage</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis.Image_Processing.default_morphology" title="Image_Analysis.Image_Processing.default_morphology"><code class="xref py py-obj docutils literal notranslate"><span class="pre">default_morphology</span></code></a>()</p></td>
+<td><p>Performs the default morphology operations: Binary Dilation and Binary Closing from skimage</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Image_Analysis.Image_Processing.dilation" title="Image_Analysis.Image_Processing.dilation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dilation</span></code></a>([mask])</p></td>
+<td><p>Performs the dilation morphology operation from skimage</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis.Image_Processing.erosion" title="Image_Analysis.Image_Processing.erosion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">erosion</span></code></a>([mask])</p></td>
+<td><p>Performs the erosion morphology operation from skimage</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Image_Analysis.Image_Processing.get_cropped" title="Image_Analysis.Image_Processing.get_cropped"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_cropped</span></code></a>()</p></td>
+<td><p>Returns the cropped image used in the analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis.Image_Processing.labels" title="Image_Analysis.Image_Processing.labels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">labels</span></code></a>([mask])</p></td>
+<td><p>Generates labels based on the provided mask</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Image_Analysis.Image_Processing.li_mask" title="Image_Analysis.Image_Processing.li_mask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">li_mask</span></code></a>([image])</p></td>
+<td><p>Performs the li mask operation from skimage</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis.Image_Processing.median_filter" title="Image_Analysis.Image_Processing.median_filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">median_filter</span></code></a>([image, cube_width])</p></td>
+<td><p>Performs the median filter operation from skimage  on the image passed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Image_Analysis.Image_Processing.multiotsu_mask" title="Image_Analysis.Image_Processing.multiotsu_mask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">multiotsu_mask</span></code></a>([image, classes])</p></td>
+<td><p>Performs the multiotsu mask operation from skimage</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis.Image_Processing.opening" title="Image_Analysis.Image_Processing.opening"><code class="xref py py-obj docutils literal notranslate"><span class="pre">opening</span></code></a>([mask])</p></td>
+<td><p>Performs the opening morphology operation from skimage</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Image_Analysis.Image_Processing.otsu_mask" title="Image_Analysis.Image_Processing.otsu_mask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">otsu_mask</span></code></a>([image])</p></td>
+<td><p>Performs the otsu mask operation from skimage</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis.Image_Processing.region_props" title="Image_Analysis.Image_Processing.region_props"><code class="xref py py-obj docutils literal notranslate"><span class="pre">region_props</span></code></a>(labels, intensity_image, properties)</p></td>
+<td><p>Generates a dictionary of properties requested for the labels provided</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Image_Analysis.Image_Processing.rescaled_intensity" title="Image_Analysis.Image_Processing.rescaled_intensity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rescaled_intensity</span></code></a>([image, vmin, vmax])</p></td>
+<td><p>Rescales the intensity of the image using the intensities provided</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis.Image_Processing.skeleton_dilation" title="Image_Analysis.Image_Processing.skeleton_dilation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">skeleton_dilation</span></code></a>([dilation])</p></td>
+<td><p>Dilates the skeleton provide.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Image_Analysis.Image_Processing.sobel" title="Image_Analysis.Image_Processing.sobel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sobel</span></code></a>([image, mask])</p></td>
+<td><p>Performs the sobel transformation on a given image</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis.Image_Processing.yen_mask" title="Image_Analysis.Image_Processing.yen_mask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">yen_mask</span></code></a>([image])</p></td>
+<td><p>Performs the yen mask operation</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis.Image_Processing.ahe_contrast">
+<span class="sig-name descname"><span class="pre">ahe_contrast</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis.Image_Processing.ahe_contrast" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs the adaptive histogram equalization operation
+and multiplies the provided image and the AHE image</p>
+<dl class="simple">
+<dt>image<span class="classifier">ndarray</span></dt><dd><p>The image to apply the operation to</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>final_contrast</dt><dd><p>An ndarray of of the same size as the input after the AHE and multiplication 
+operations have been applied</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis.Image_Processing.background_subtract">
+<span class="sig-name descname"><span class="pre">background_subtract</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gauss_sigma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">7</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis.Image_Processing.background_subtract" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subtracts the background from the image provided</p>
+<p>If the argument <cite>gauss_sigma</cite> isn’t provided, the default 
+value of 7 is passed.</p>
+<dl class="simple">
+<dt>image<span class="classifier">ndarray</span></dt><dd><p>The image to apply the operation to</p>
+</dd>
+<dt>gauss_sigma<span class="classifier">int, optional</span></dt><dd><p>The sigma used for the gaussian operation (default is 7)</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>subtract</dt><dd><p>The image with the same shape as the input image after the 
+subtraction has been applied</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis.Image_Processing.closing">
+<span class="sig-name descname"><span class="pre">closing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis.Image_Processing.closing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs the closing morphology operation from skimage</p>
+<dl class="simple">
+<dt>mask<span class="classifier">ndarray</span></dt><dd><p>The mask to perform the morph operation on</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>mask_morph</dt><dd><p>The final mask of type ndarray after the morphology operation is performed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis.Image_Processing.default_morphology">
+<span class="sig-name descname"><span class="pre">default_morphology</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis.Image_Processing.default_morphology" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs the default morphology operations: Binary Dilation and Binary Closing
+from skimage</p>
+<dl class="simple">
+<dt>mask_closing</dt><dd><p>an array of the same shape as the input image. The final mask 
+after the morphology operations are performed</p>
+</dd>
+<dt>final_mask</dt><dd><p>an array of the same shape as the input image. The final mask 
+isolated only to the area within the skeleton</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis.Image_Processing.dilation">
+<span class="sig-name descname"><span class="pre">dilation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis.Image_Processing.dilation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs the dilation morphology operation from skimage</p>
+<dl class="simple">
+<dt>mask<span class="classifier">ndarray</span></dt><dd><p>The mask to perform the morph operation on</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>mask_morph</dt><dd><p>The final mask of type ndarray after the morphology operation is performed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis.Image_Processing.erosion">
+<span class="sig-name descname"><span class="pre">erosion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis.Image_Processing.erosion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs the erosion morphology operation from skimage</p>
+<dl class="simple">
+<dt>mask<span class="classifier">ndarray</span></dt><dd><p>The mask to perform the morph operation on</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>mask_morph</dt><dd><p>The final mask of type ndarray after the morphology operation is performed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis.Image_Processing.get_cropped">
+<span class="sig-name descname"><span class="pre">get_cropped</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis.Image_Processing.get_cropped" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the cropped image used in the analysis.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis.Image_Processing.labels">
+<span class="sig-name descname"><span class="pre">labels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis.Image_Processing.labels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates labels based on the provided mask</p>
+<dl class="simple">
+<dt>mask<span class="classifier">ndarray</span></dt><dd><p>The mask to perform the morph operation on</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>boundaries</dt><dd><p>an array of the same shape as the input</p>
+</dd>
+<dt>label_image</dt><dd><p>an array with labels of the same shape as the input. All
+connected areas are under one label</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis.Image_Processing.li_mask">
+<span class="sig-name descname"><span class="pre">li_mask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis.Image_Processing.li_mask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs the li mask operation from skimage</p>
+<dl class="simple">
+<dt>image<span class="classifier">ndarray</span></dt><dd><p>The image to apply the operation to</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>mask_morph</dt><dd><p>an array with the same shaqpe as the input after the 
+mask has been applied</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis.Image_Processing.median_filter">
+<span class="sig-name descname"><span class="pre">median_filter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cube_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis.Image_Processing.median_filter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs the median filter operation from skimage 
+on the image passed.</p>
+<p>If the argument <cite>cube_width</cite> isn’t provided, the default 
+value of 3 is passed.</p>
+<dl class="simple">
+<dt>image<span class="classifier">ndarray</span></dt><dd><p>The image to apply the operation to</p>
+</dd>
+<dt>cube_width<span class="classifier">int, optional</span></dt><dd><p>The width of the cube used as the footprint for the 
+filter (default is 3)</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>median</dt><dd><p>The image after the median filter has been applied</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis.Image_Processing.multiotsu_mask">
+<span class="sig-name descname"><span class="pre">multiotsu_mask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">classes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis.Image_Processing.multiotsu_mask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs the multiotsu mask operation from skimage</p>
+<p>If the argument <cite>classes</cite> isn’t provided, the default 
+value of 2 is passed.</p>
+<dl class="simple">
+<dt>image<span class="classifier">ndarray</span></dt><dd><p>The image to apply the operation to</p>
+</dd>
+<dt>classes<span class="classifier">int, optional</span></dt><dd><p>The number of classes in the image (default is 2)</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>mask_morph</dt><dd><p>an array with the same shaqpe as the input after the 
+mask has been applied</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis.Image_Processing.opening">
+<span class="sig-name descname"><span class="pre">opening</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis.Image_Processing.opening" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs the opening morphology operation from skimage</p>
+<dl class="simple">
+<dt>mask<span class="classifier">ndarray</span></dt><dd><p>The mask to perform the morph operation on</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>mask_morph</dt><dd><p>The final mask of type ndarray after the morphology operation is performed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis.Image_Processing.otsu_mask">
+<span class="sig-name descname"><span class="pre">otsu_mask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis.Image_Processing.otsu_mask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs the otsu mask operation from skimage</p>
+<dl class="simple">
+<dt>image<span class="classifier">ndarray</span></dt><dd><p>The image to apply the operation to</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>mask_morph</dt><dd><p>an array with the same shaqpe as the input after the 
+mask has been applied</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis.Image_Processing.region_props">
+<span class="sig-name descname"><span class="pre">region_props</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">labels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">intensity_image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">properties</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis.Image_Processing.region_props" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a dictionary of properties requested for the labels
+provided</p>
+<dl class="simple">
+<dt>labels<span class="classifier">ndarray</span></dt><dd><p>The labeled image to generate the properties for</p>
+</dd>
+<dt>intensity_image<span class="classifier">ndarray</span></dt><dd><p>The image to reference intensity values for</p>
+</dd>
+<dt>properties<span class="classifier">list</span></dt><dd><p>A list of strings with the properties desired</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>props</dt><dd><p>a dictionary with the properties generated for each label</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis.Image_Processing.rescaled_intensity">
+<span class="sig-name descname"><span class="pre">rescaled_intensity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vmin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vmax</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">99.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis.Image_Processing.rescaled_intensity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rescales the intensity of the image using the intensities provided</p>
+<p>If the arguments <cite>vmin</cite> and <cite>vmax</cite> aren’t provided, the default 
+values of 0 and 255 are passed.</p>
+<dl class="simple">
+<dt>image<span class="classifier">ndarray</span></dt><dd><p>The image to apply the operation to</p>
+</dd>
+<dt>vmin<span class="classifier">int, optional</span></dt><dd><p>The minimum intensity value allowed for the image (default is 0)</p>
+</dd>
+<dt>vmax<span class="classifier">int, optional</span></dt><dd><p>The maximum intensity value allowed for the image (default is 255)</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>final_contrast</dt><dd><p>An ndarray of of the same size as the input after the rescaled intensity 
+operation has been applied</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis.Image_Processing.skeleton_dilation">
+<span class="sig-name descname"><span class="pre">skeleton_dilation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dilation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis.Image_Processing.skeleton_dilation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dilates the skeleton provide.</p>
+<p>If the argument <cite>dilation</cite> isn’t passed in, the default
+dilation value is used. Crops the image to be analyzed 
+to keep the image size small.</p>
+<dl class="simple">
+<dt>dilation<span class="classifier">int, optional</span></dt><dd><p>The amount of dilation applied to the skeleton
+(default is 10)</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>ROI</dt><dd><p>An array for the cropped image with the dimensions of the skeleton</p>
+</dd>
+<dt>cropped_skeleton</dt><dd><p>An array for the cropped skeleton with the size of the skeleton</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis.Image_Processing.sobel">
+<span class="sig-name descname"><span class="pre">sobel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis.Image_Processing.sobel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs the sobel transformation on a given image</p>
+<p>If the argument <cite>mask</cite> isn’t provided, the mask will
+not be used.</p>
+<dl class="simple">
+<dt>image<span class="classifier">ndarray</span></dt><dd><p>The image to apply the operation to</p>
+</dd>
+<dt>mask<span class="classifier">ndarray, optional</span></dt><dd><p>mask to isolate the sobel filter to (default is None)</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>sobel</dt><dd><p>The image of same shape as the input after the sobel filter 
+has been applied</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis.Image_Processing.yen_mask">
+<span class="sig-name descname"><span class="pre">yen_mask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis.Image_Processing.yen_mask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs the yen mask operation</p>
+<dl class="simple">
+<dt>image<span class="classifier">ndarray</span></dt><dd><p>The image to apply the operation to</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>mask_morph</dt><dd><p>an array with the same shaqpe as the input after the 
+mask has been applied</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="Image_Analysis.html" class="btn btn-neutral float-left" title="Image_Analysis" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2022, Ashley Hardy.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

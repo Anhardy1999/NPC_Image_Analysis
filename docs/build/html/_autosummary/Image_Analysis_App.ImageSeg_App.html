@@ -1,0 +1,637 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Image_Analysis_App.ImageSeg_App &mdash; NPC Image Analysis 0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Image_Analysis" href="Image_Analysis.html" />
+    <link rel="prev" title="Image_Analysis_App" href="Image_Analysis_App.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> NPC Image Analysis
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../Usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Default%20Analysis%20Usage.html">Default Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Custom%20Analysis%20Usage.html">Custom Analysis Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Region%20Properties.html">Region Properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Examples.html">Example Usage</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="Image_Analysis_App.html">Image_Analysis_App</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Image_Analysis_App.ImageSeg_App</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Image_Analysis.html">Image_Analysis</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">NPC Image Analysis</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+<div class="git-ribbon">
+  <a href="http://github.com/SwissDataScienceCenter" rel="me">Join us on GitHub</a>
+</div>
+
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="Image_Analysis_App.html">Image_Analysis_App</a> &raquo;</li>
+        
+      <li>Image_Analysis_App.ImageSeg_App</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/_autosummary/Image_Analysis_App.ImageSeg_App.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="image-analysis-app-imageseg-app">
+<h1>Image_Analysis_App.ImageSeg_App<a class="headerlink" href="#image-analysis-app-imageseg-app" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Image_Analysis_App.</span></span><span class="sig-name descname"><span class="pre">ImageSeg_App</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">master</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A class used to create the Image Segmentation App</p>
+<p>…</p>
+<dl class="simple">
+<dt>master<span class="classifier">TK()  </span></dt><dd><p>TK toplevel object to initialize the application</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>credits()</dt><dd><p>Prints the credits for this application on the status screen</p>
+</dd>
+<dt>help_info()</dt><dd><p>Prints help information for this application based on the user’s choice</p>
+</dd>
+<dt>read_files()</dt><dd><p>Allows the user to select the images needed for analysis</p>
+</dd>
+<dt>bttn(window, text, bcolor, fcolor, command)</dt><dd><p>window : top level object
+text : str
+bcolor : str
+fcolor : str
+command : method
+Creates the buttons for the custom analysis window</p>
+</dd>
+<dt>default_analysis()</dt><dd><p>Performs the default analysis operations for the images provided.</p>
+</dd>
+<dt>custom_analysis()</dt><dd><p>Allows the user to customize the analysis for their images</p>
+</dd>
+<dt>analyze()</dt><dd><p>Creates the window for the user to choose their analysis option.</p>
+</dd>
+<dt>recent_image()</dt><dd><p>Allows the user to access the most recently created image.</p>
+</dd>
+<dt>previous_image()</dt><dd><p>Allows the user to access the image created prior to the most recent one</p>
+</dd>
+<dt>original_image()</dt><dd><p>Allows the user to access the original image essentially resetting their analysis.</p>
+</dd>
+<dt>recent_mask()</dt><dd><p>Allows the user to access the most recently created mask</p>
+</dd>
+<dt>previous_mask()</dt><dd><p>Allows the user to access the mask created prior to the most recent mask</p>
+</dd>
+<dt>skeleton_dilate()</dt><dd><p>Allows the user to dilate the skeleton mask loaded in to isolate their region of interest</p>
+</dd>
+<dt>median_image()</dt><dd><p>Allows the user to perform a median filter operation through the customization window</p>
+</dd>
+<dt>background_subtract()</dt><dd><p>Allows the user to perform a background subtract operation through the customization window</p>
+</dd>
+<dt>sobel_image()</dt><dd><p>Allows the user to perform a sobel filter operation through the customization window</p>
+</dd>
+<dt>ahe()</dt><dd><p>Allows the user to perform an adaptive histogram equalization operation through the customization window</p>
+</dd>
+<dt>rescale_intensity()</dt><dd><p>Allows the user to perform a rescaled intensity operation through the customization window</p>
+</dd>
+<dt>multiotsu()</dt><dd><p>Allows the user to perform a multiotsue mask operation through the customization window</p>
+</dd>
+<dt>otsu()</dt><dd><p>Allows the user to perform an otsu mask operation through the customization window</p>
+</dd>
+<dt>yen()</dt><dd><p>Allows the user to perform a yen mask operation through the customization window</p>
+</dd>
+<dt>li()</dt><dd><p>Allows the user to perform a li mask operation through the customization window</p>
+</dd>
+<dt>defaul_morph()</dt><dd><p>Allows the user to use the default morphology operations used in the default analysis</p>
+</dd>
+<dt>closing_morph()</dt><dd><p>Allows the user to use the closing morphology operation through the customization window</p>
+</dd>
+<dt>opening_morph()</dt><dd><p>Allows the user to use the opening morphology operation through the customization window</p>
+</dd>
+<dt>dilation_morph()</dt><dd><p>Allows the user to use the dilation morphology operation through the customization window</p>
+</dd>
+<dt>erosion_morph()</dt><dd><p>Allows the user to use the erosion morphology operation through the customization window</p>
+</dd>
+<dt>properties_table()</dt><dd><p>Creates the table with properties from the analysis as selected by the user</p>
+</dd>
+<dt>props()</dt><dd><p>Allows the user to select what properties they would like to include in their analysis</p>
+</dd>
+<dt>export()</dt><dd><p>Exports the properties table as an excel file</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">master</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.__init__" title="Image_Analysis_App.ImageSeg_App.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(master)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.ahe" title="Image_Analysis_App.ImageSeg_App.ahe"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ahe</span></code></a>()</p></td>
+<td><p>Performs the adaptive histogram equalization operation from scikit image.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.analyze" title="Image_Analysis_App.ImageSeg_App.analyze"><code class="xref py py-obj docutils literal notranslate"><span class="pre">analyze</span></code></a>()</p></td>
+<td><p>Intialize the window for the user to choose their analysis option: Default or Custom</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.background_subtract" title="Image_Analysis_App.ImageSeg_App.background_subtract"><code class="xref py py-obj docutils literal notranslate"><span class="pre">background_subtract</span></code></a>()</p></td>
+<td><p>Function for the background subtraction button.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.bttn" title="Image_Analysis_App.ImageSeg_App.bttn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bttn</span></code></a>(window, text, bcolor, fcolor, command)</p></td>
+<td><p>Creates the buttons for the custom analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.closing_morph" title="Image_Analysis_App.ImageSeg_App.closing_morph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">closing_morph</span></code></a>()</p></td>
+<td><p>Perfroms the closing morphology operation.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.credits" title="Image_Analysis_App.ImageSeg_App.credits"><code class="xref py py-obj docutils literal notranslate"><span class="pre">credits</span></code></a>()</p></td>
+<td><p>Returns the credits for this program.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.custom_analysis" title="Image_Analysis_App.ImageSeg_App.custom_analysis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">custom_analysis</span></code></a>()</p></td>
+<td><p>Function for the user to customize their analysis process.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.default_analysis" title="Image_Analysis_App.ImageSeg_App.default_analysis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">default_analysis</span></code></a>()</p></td>
+<td><p>Default analysis operation for loaded image.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.default_morph" title="Image_Analysis_App.ImageSeg_App.default_morph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">default_morph</span></code></a>()</p></td>
+<td><p>Performs the default morphology operation.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.dilation_morph" title="Image_Analysis_App.ImageSeg_App.dilation_morph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dilation_morph</span></code></a>()</p></td>
+<td><p>Performs the dilation morphology operation.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.erosion_morph" title="Image_Analysis_App.ImageSeg_App.erosion_morph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">erosion_morph</span></code></a>()</p></td>
+<td><p>Performs the erosion morphology operation.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.export" title="Image_Analysis_App.ImageSeg_App.export"><code class="xref py py-obj docutils literal notranslate"><span class="pre">export</span></code></a>()</p></td>
+<td><p>Exports an excel sheet of the region propery information obtained.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.help_info" title="Image_Analysis_App.ImageSeg_App.help_info"><code class="xref py py-obj docutils literal notranslate"><span class="pre">help_info</span></code></a>()</p></td>
+<td><p>Provides some help information about how to use the program.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.label_image" title="Image_Analysis_App.ImageSeg_App.label_image"><code class="xref py py-obj docutils literal notranslate"><span class="pre">label_image</span></code></a>()</p></td>
+<td><p>This will create labels for the image.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.li" title="Image_Analysis_App.ImageSeg_App.li"><code class="xref py py-obj docutils literal notranslate"><span class="pre">li</span></code></a>()</p></td>
+<td><p>Li mask morphology operation.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.median_image" title="Image_Analysis_App.ImageSeg_App.median_image"><code class="xref py py-obj docutils literal notranslate"><span class="pre">median_image</span></code></a>()</p></td>
+<td><p>Function for the median filter button.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.multiotsu" title="Image_Analysis_App.ImageSeg_App.multiotsu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">multiotsu</span></code></a>()</p></td>
+<td><p>MultiOtsu mask morphology operation.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.opening_morph" title="Image_Analysis_App.ImageSeg_App.opening_morph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">opening_morph</span></code></a>()</p></td>
+<td><p>Performs the opening morphology operation.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.original_image" title="Image_Analysis_App.ImageSeg_App.original_image"><code class="xref py py-obj docutils literal notranslate"><span class="pre">original_image</span></code></a>()</p></td>
+<td><p>Accesses the original image, esentially resetting the analysis</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.otsu" title="Image_Analysis_App.ImageSeg_App.otsu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">otsu</span></code></a>()</p></td>
+<td><p>Otsu mask morphology operation.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.previous_image" title="Image_Analysis_App.ImageSeg_App.previous_image"><code class="xref py py-obj docutils literal notranslate"><span class="pre">previous_image</span></code></a>()</p></td>
+<td><p>Accesses the image created prior to the most recent one</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.previous_mask" title="Image_Analysis_App.ImageSeg_App.previous_mask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">previous_mask</span></code></a>()</p></td>
+<td><p>Accesses the mask created prior to the most recent one</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.properties_table" title="Image_Analysis_App.ImageSeg_App.properties_table"><code class="xref py py-obj docutils literal notranslate"><span class="pre">properties_table</span></code></a>()</p></td>
+<td><p>Creates the table of properties for analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.props" title="Image_Analysis_App.ImageSeg_App.props"><code class="xref py py-obj docutils literal notranslate"><span class="pre">props</span></code></a>()</p></td>
+<td><p>Obtains properties of the identified regions of interest.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.read_files" title="Image_Analysis_App.ImageSeg_App.read_files"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_files</span></code></a>()</p></td>
+<td><p>Loads the images in to perform analysis on.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.recent_image" title="Image_Analysis_App.ImageSeg_App.recent_image"><code class="xref py py-obj docutils literal notranslate"><span class="pre">recent_image</span></code></a>()</p></td>
+<td><p>Accesses the most recent image created.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.recent_mask" title="Image_Analysis_App.ImageSeg_App.recent_mask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">recent_mask</span></code></a>()</p></td>
+<td><p>Accesses the most recent mask created.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.rescale_intensity" title="Image_Analysis_App.ImageSeg_App.rescale_intensity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rescale_intensity</span></code></a>()</p></td>
+<td><p>Performs the rescale intensity operation from scikit image.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.skeleton_dilate" title="Image_Analysis_App.ImageSeg_App.skeleton_dilate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">skeleton_dilate</span></code></a>()</p></td>
+<td><p>Function to dilate the skeleton loaded in by the user to isolate to their region of interest.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.sobel_image" title="Image_Analysis_App.ImageSeg_App.sobel_image"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sobel_image</span></code></a>()</p></td>
+<td><p>Performs the sobel operation from scikit image.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Image_Analysis_App.ImageSeg_App.yen" title="Image_Analysis_App.ImageSeg_App.yen"><code class="xref py py-obj docutils literal notranslate"><span class="pre">yen</span></code></a>()</p></td>
+<td><p>Yen mask morphology operation.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.ahe">
+<span class="sig-name descname"><span class="pre">ahe</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.ahe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs the adaptive histogram equalization operation from scikit image.</p>
+<p>In addition, this function will multiply the adaptive histogram equalization image
+will be multiplied to the previous image passed in to enhance the contrast.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.analyze">
+<span class="sig-name descname"><span class="pre">analyze</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.analyze" title="Permalink to this definition">¶</a></dt>
+<dd><p>Intialize the window for the user to choose their analysis option: Default or Custom</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.background_subtract">
+<span class="sig-name descname"><span class="pre">background_subtract</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.background_subtract" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for the background subtraction button. Subtracts the background from the image.</p>
+<p>Asks the user for the gaussian sigma value to use.
+The default value is 7.
+If the user does not provide a value, will simply cancel the operation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.bttn">
+<span class="sig-name descname"><span class="pre">bttn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">window</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bcolor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fcolor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">command</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.bttn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates the buttons for the custom analysis.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.closing_morph">
+<span class="sig-name descname"><span class="pre">closing_morph</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.closing_morph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perfroms the closing morphology operation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.credits">
+<span class="sig-name descname"><span class="pre">credits</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.credits" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the credits for this program.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.custom_analysis">
+<span class="sig-name descname"><span class="pre">custom_analysis</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.custom_analysis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for the user to customize their analysis process.</p>
+<p>This contains all of the possible analysis options available to the user. 
+This initializes a different napari viewer from the default analysis, and 
+will stop the default analysis viewer from continued use if one was created 
+prior to this.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.default_analysis">
+<span class="sig-name descname"><span class="pre">default_analysis</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.default_analysis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Default analysis operation for loaded image.</p>
+<p>Will initialize the image analysis function with the default 
+parameters without any customization. Creates a napari viewer
+used only for the default analysis.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.default_morph">
+<span class="sig-name descname"><span class="pre">default_morph</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.default_morph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs the default morphology operation.</p>
+<p>This operation consists of dilation and closing morphology steps.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.dilation_morph">
+<span class="sig-name descname"><span class="pre">dilation_morph</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.dilation_morph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs the dilation morphology operation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.erosion_morph">
+<span class="sig-name descname"><span class="pre">erosion_morph</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.erosion_morph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs the erosion morphology operation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.export">
+<span class="sig-name descname"><span class="pre">export</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.export" title="Permalink to this definition">¶</a></dt>
+<dd><p>Exports an excel sheet of the region propery information obtained.
+This exports the table created from the proerties_table function</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.help_info">
+<span class="sig-name descname"><span class="pre">help_info</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.help_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provides some help information about how to use the program.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.label_image">
+<span class="sig-name descname"><span class="pre">label_image</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.label_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>This will create labels for the image.</p>
+<p>The returned labels are regions of interests determined by the
+final mask after all of the analysis is done. 
+Getting these labels will set analysis to complete and allow for 
+properties to be exported</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.li">
+<span class="sig-name descname"><span class="pre">li</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.li" title="Permalink to this definition">¶</a></dt>
+<dd><p>Li mask morphology operation.</p>
+<p>Uses the current image and doesn’t require any args.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.median_image">
+<span class="sig-name descname"><span class="pre">median_image</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.median_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for the median filter button. Performs the median filter operation from scikit image.</p>
+<p>Asks the user for the cube width value to use.
+The default value is 3.
+If the user does not provide a value, will simply cancel the operation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.multiotsu">
+<span class="sig-name descname"><span class="pre">multiotsu</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.multiotsu" title="Permalink to this definition">¶</a></dt>
+<dd><p>MultiOtsu mask morphology operation.</p>
+<p>Uses the current image and doesn’t require any args.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.opening_morph">
+<span class="sig-name descname"><span class="pre">opening_morph</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.opening_morph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs the opening morphology operation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.original_image">
+<span class="sig-name descname"><span class="pre">original_image</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.original_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accesses the original image, esentially resetting the analysis</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.otsu">
+<span class="sig-name descname"><span class="pre">otsu</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.otsu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Otsu mask morphology operation.</p>
+<p>Uses the current image and doesn’t require any args.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.previous_image">
+<span class="sig-name descname"><span class="pre">previous_image</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.previous_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accesses the image created prior to the most recent one</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.previous_mask">
+<span class="sig-name descname"><span class="pre">previous_mask</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.previous_mask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accesses the mask created prior to the most recent one</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.properties_table">
+<span class="sig-name descname"><span class="pre">properties_table</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.properties_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates the table of properties for analysis.</p>
+<p>This is created from the labels generated and based on the properties you selected.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.props">
+<span class="sig-name descname"><span class="pre">props</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.props" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtains properties of the identified regions of interest.</p>
+<p>This is based on the labels obtained. 
+This step cannot be performed if the analysis is set to complete. 
+Properties can be changed based on what the user selects when prompted</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.read_files">
+<span class="sig-name descname"><span class="pre">read_files</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.read_files" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads the images in to perform analysis on.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.recent_image">
+<span class="sig-name descname"><span class="pre">recent_image</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.recent_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accesses the most recent image created.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.recent_mask">
+<span class="sig-name descname"><span class="pre">recent_mask</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.recent_mask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accesses the most recent mask created.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.rescale_intensity">
+<span class="sig-name descname"><span class="pre">rescale_intensity</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.rescale_intensity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs the rescale intensity operation from scikit image.</p>
+<p>Asks the user for the minimum and maximum intensity value to use.
+The default values are 0 (minimum) and 255 (maximum).
+If the user does not provide a value, will simply cancel the operation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.skeleton_dilate">
+<span class="sig-name descname"><span class="pre">skeleton_dilate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.skeleton_dilate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to dilate the skeleton loaded in by the user to isolate to their region of interest.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.sobel_image">
+<span class="sig-name descname"><span class="pre">sobel_image</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.sobel_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs the sobel operation from scikit image.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Image_Analysis_App.ImageSeg_App.yen">
+<span class="sig-name descname"><span class="pre">yen</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Image_Analysis_App.ImageSeg_App.yen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Yen mask morphology operation.</p>
+<p>Uses the current image and doesn’t require any args.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="Image_Analysis.html" class="btn btn-neutral float-right" title="Image_Analysis" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Image_Analysis_App.html" class="btn btn-neutral float-left" title="Image_Analysis_App" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2022, Ashley Hardy.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
