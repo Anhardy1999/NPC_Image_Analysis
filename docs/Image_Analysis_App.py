@@ -15,12 +15,12 @@ import tkinter as tk
 
 # --------------------------------- Image analysis Imports --------------------------------
 import napari
-from numpy import spacing 
+#from numpy import spacing 
 import pandas as pd 
-from skimage import measure
+#from skimage import measure
 import skimage.io as skio
 from Image_Analysis import Image_Processing
-import matplotlib.pyplot as plt 
+#import matplotlib.pyplot as plt 
 import os
 
 
