@@ -1,12 +1,12 @@
 from logging import raiseExceptions
-import os
-import napari 
+#import os
+#import napari 
 import numpy as np
 import pandas as pd 
-import imageio as io
+#import imageio as io
 from skimage import filters, morphology, measure, exposure, segmentation, restoration, feature, util
-import skimage.io as skio
-from scipy import ndimage as ndi
+#import skimage.io as skio
+#from scipy import ndimage as ndi
 
 class Image_Processing():
     '''
