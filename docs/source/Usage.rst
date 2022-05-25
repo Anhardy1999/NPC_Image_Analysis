@@ -15,7 +15,7 @@ However, the sourcecode of this program can be found at this `github page <https
 
 Once installed you can run the following in the command line to initate the program.
 
-```python -m NPCAnalysis``` 
+``python -m NPCAnalysis`` 
 
 
 General Usage
