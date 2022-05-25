@@ -9,9 +9,13 @@ Python 3.6 or above
 Installation
 ------------
 
-``pip install npc-image-analysis``
+``pip install npc-analyze-image``
 
 However, the sourcecode of this program can be found at this `github page <https://github.com/Anhardy1999/NPC_Image_Analysis>`_
+
+Once installed you can run the following in the command line to initate the program.
+
+```python -m NPCAnalysis``` 
 
 
 General Usage
