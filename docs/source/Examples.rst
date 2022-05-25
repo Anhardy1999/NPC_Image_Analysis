@@ -7,6 +7,7 @@ Using NPC Image Analysis
     :width: 400 
     :align: center
 
+
 Above is what the application will look like upon initialization. The
 application's simple interface was designed to not overwhelm the user 
 with too much information and options at one time. 
@@ -32,6 +33,8 @@ the images loaded and will ask the user to confirm that these are correct.
     :width: 400 
     :align: center
 
+
+
 Choosing an analysis option
 *****************************
 
@@ -46,11 +49,15 @@ images.
 .. note:: 
     The spacing indicates the distance between each "z" plane image to create the depth of the image. 
 
-For this example, we are using .5.
+For this example, we are using .5:
+
+
 
 .. image:: ../Example_Images/3.jpg
     :width: 400 
     :align: center
+
+
 
 Pressing "Okay" will initiate the analysis. A napari viewer will open. While this process is occuring, the
 screen may remain white and the app may be unresponsive as it operates. Don't panic, this is a sign that it is working.
@@ -77,31 +84,40 @@ of your images.
 .. note:: 
     The spacing indicates the distance between each "z" plane image to create the depth of the image. 
 
-Here we will be using .5
+Here we will be using .5:
 
 .. image:: ../Example_Images/7.jpg
     :width: 600 
     :align: center
 
+
+
 Upon entering your spacing, a napari viewer window will open. It will be empty and allow you the option to begin
 your image processing.
+
+
 
 .. image:: ../Example_Images/8.jpg
     :width: 600 
     :align: center
 
+
+
 We will start with a skeleton dilation. Clicking "Skeleton Dilation" will prompt you to input how much you would like
 to dilate the skeleton image. 
 
-The default is 10. For this example, we will use 10. 
+The default is 10. For this example, we will also use 10. 
 
 .. warning::
     This operation can take some time, so if it appears that application is frozen, keep in mind the size of the images as this
     is a contributing factor to the processing power and time consumption of each operation.
 
+
 .. image:: ../Example_Images/9.jpg
     :width: 600 
     :align: center
+
+
 
 This process will return the dilated skeleton as well as the cropped image called 'ROI'. The "status" window will also update with the process
 that was just performed and what value was performed to allow the user to keep track of what operations they have performed so far.
@@ -115,15 +131,21 @@ This will return the image after the median filter has been applied.
     :width: 600 
     :align: center
 
+
+
 We will apply a background subtraction after this to even out the surrounding background and make it easier for the 
 final step of identify our regions of interest easier. Clicking this will prompt the user to input a gaussian sigma 
 or how strong the blur will be. 
 
-The default is 7. In this case, we'll use 10.
+The default is 7. In this case, we'll use 10:
+
+
 
 .. image:: ../Example_Images/11.jpg
     :width: 600 
     :align: center
+
+
 
 While we could apply the sobel filter which will define the edges of the objects within this image, it's not really
 necessary here. We want to make the images within the radial process is clear so defining the edges of this particular image
@@ -142,9 +164,11 @@ They are percentages in this case, but the defaults for rescaled intensity is .5
 
 We will use 99.65 and 99.98 for the minimum and maximum values respectively.
 
+
 .. image:: ../Example_Images/12.jpg
     :width: 600 
     :align: center
+
 
 This returns the above. While it is not terrible, it's not exactly what we're looking for right now and adjusting the contrast this way will require 
 a little more playing around. 
@@ -159,9 +183,11 @@ We should return to the background subtracted image now. We'll go ahead and use 
 The purpose of this option is to provide an automatic contrast that doesn't require any input from the user. The Rescale Intensity option allows more freedom for the user
 and can be applied after the adaptive histogram equalization operation is performed to continue to tweak the contrast. 
 
+
 .. image:: ../Example_Images/13.jpg
     :width: 600 
     :align: center
+
 
 We now have our final contrasted image. From here, it's time to select a mask option. In the default analysis, the multiotsu mask is used. If you don't like the mask that is used
 you can use the "Use Most Recent Image" option to return to the image prior to using the mask and play around with the options you would like to use. 
@@ -172,20 +198,27 @@ We'll use the multiotsu mask with 2 classes.
     :width: 600 
     :align: center
 
+
+
 Great! This is looking pretty good, but we can probably define this mask a little bit. The default morphology option allows the user to use the morphological steps that are used in the
 Default Analysis. The default analysis uses the Dilation and Closing morphological adjustments in that order.
 
 We can see what each of those look like here by using them in that order instead of pressing Default Morphology. 
 
+
 .. image:: ../Example_Images/15.jpg
     :width: 600 
     :align: center
-    
+  
+  
 This final mask looks pretty good. Once you're pleased with the final mask, you can generate labels by pressing the "Get Labels" options. Labels will be generated and added to the viewer.
+
 
 .. image:: ../Example_Images/16.jpg
     :width: 600 
     :align: center
+
+
 
 From here, we can start getting data from our analysis.
 
@@ -203,12 +236,16 @@ After that, click the "Start ROI Properties Analysis" button.
     :width: 400 
     :align: center
 
+
+
 After this process is completed, you will be presented with a table containing data for each region of interest and the properties
 you selected.  
 
 .. image:: ../Example_Images/6.jpg
     :width: 600 
     :align: center
+
+
 
 Clicking the "Export ROI Properties" button will open the save dialog and allow you to save your data.
 If you would like to get additional properties, you can return to the window with your property options and
