@@ -52,6 +52,8 @@ exclude_patterns = []
 autodoc_mock_imports = [
     "napari",
     "pandas"
+    "numpy",
+    "msilib"
 ]
 
 
