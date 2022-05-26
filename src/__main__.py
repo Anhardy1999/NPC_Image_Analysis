@@ -833,6 +833,81 @@ class ImageSeg_App():
         )
 
    # -------------------- Backend Functions --------------------
+        self.help_txt = '''
+        
+        GETTING STARTED
+
+        This software is intended to be modifiable in order to answer particular needs to identify organelles and structures.
+        Using this software, you will be able to look within the radial process of a specific cell of interest. This is used in conjuction with ImageJ's Simple Neurite Tracer.
+
+        To use this software, you will need... 
+            - A greyscale tiff image that contains the channel for the organelles or structures of interest you would like analyzed
+            - The skeleton file created from the simple neurite tracer as a .tiff file. You cannot use the .trace file for this as it cannot be read in.
+
+        After you load in your images using the "Load Images" button, you can selected "Perform Analysis".
+        You will be provided with two options, "Default Analysis" and "Custom Analysis". If you would like to just see what a default analysis would look like, selected Default Analysis.
+
+        This will ask for the "z" spacing of your images. This only effects the presentation of your images not the analysis. From there, depending on the size of the image, it can take a while for the analysis to complete. If it looks temporarily frozen, that's possibly why.
+        You can find more information about the Default Analysis option and what operations are performed, selected the Default Analysis under the help window.
+
+        You can see examples of this file being used in the github below:
+        https://github.com/jebestman/ImageAnalysis
+        ''' 
+        
+
+        self.default_txt = '''
+        
+        DEFAULT ANALYSIS
+
+        The default analysis operation performs the following functions:
+            - Skeleton Dilation (Default Dilation is 10)
+            - Cropping of the image to the length/size/volume of the skeleton
+            - Median filter with a cube width of 3
+            - Background subtraction using a gaussion blur of strength 7.
+            - Adaptive Histogram Equalization: This consists of using scikit image's adaptive histogram equalization option. It is then multipled to the background subtracted image to give the final contrast.
+            - Multiotsu mask at 2 classes (there are presumed only 2 classes, background and regions of interest)
+            - Default morphology: Dilation morphology and then closing morphology
+            - Labels are added to the image.
+        ''' 
+
+        self.custom_txt = '''
+        
+        CUSTOM ANALYSIS OPTIONS:
+
+        - Skeleton Dilation 
+        - Median Filter
+        - Background Subtraction
+        - Sobel Filter
+        - Adaptive Histogram Equalization: This consists of using scikit image's adaptive histogram equalization option. It is then multipled to the background subtracted image to give the final contrast.
+        - Rescale Intensity
+
+        MASK OPTIONS
+
+        - MultiOtsu Mask
+        - Otsu Mask
+        - Yen Mask
+        - Li Mask
+
+        MORPHOLOGY OPTIONS
+
+        - Default Morphology (includes dilation and the closing. Used in the default analysis process)
+        - Closing Morphology
+        - Opening Morphology
+        - Dilation Morphology
+        - Erosion Morphology
+        - Get Labels: Obtain the labels after the morpholgoy to get your ROIs
+
+        UNDO/REDO
+        * Previous image can only go back once.
+
+        - Use Previous Image (will use the previously created image prior to the most recent action)
+        - Use Most Recent Image (this will return you to the current image if you clicked previous image)
+        - Use Original Image (reset to the originally loaded in image)
+        - Use Previous Mask (will use the previously created mask prior to the most recent action)
+        - Use Most Recent Image (this will return you to the current mask if you clicked previous mask)
+        ''' 
+
+
 
     def credits(self):
         ''' Returns the credits for this program. '''
@@ -846,28 +921,22 @@ class ImageSeg_App():
 
         def getting_started():
             self.text.config(state='normal')   
-            with open(self.help_txt, 'r') as f:
-                for line in f:
 
-                    self.text.insert(tk.END, line)
+            self.text.insert(tk.END, self.help_txt)
 
             self.text.config(state = 'disabled')
         
         def reading_default():
             self.text.config(state='normal')   
-            with open(self.default_txt, 'r') as f:
-                for line in f:
 
-                    self.text.insert(tk.END, line)
+            self.text.insert(tk.END, self.default_txt)
 
             self.text.config(state = 'disabled')
 
         def reading_custom():
             self.text.config(state='normal')   
-            with open(self.custom_txt, 'r') as f:
-                for line in f:
 
-                    self.text.insert(tk.END, line)
+            self.text.insert(tk.END, self.custom_txt)
 
             self.text.config(state = 'disabled')
 
@@ -910,7 +979,6 @@ class ImageSeg_App():
 
     def read_files(self):
         ''' Loads the images in to perform analysis on. '''
-
 
         if self.main_image_path and self.skeleton_path is not None: 
             correct_files = messagebox.askyesno(title = 'Load new images', 
