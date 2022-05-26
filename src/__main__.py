@@ -850,8 +850,8 @@ class ImageSeg_App():
         This will ask for the "z" spacing of your images. This only effects the presentation of your images not the analysis. From there, depending on the size of the image, it can take a while for the analysis to complete. If it looks temporarily frozen, that's possibly why.
         You can find more information about the Default Analysis option and what operations are performed, selected the Default Analysis under the help window.
 
-        You can see examples of this file being used in the github below:
-        https://github.com/jebestman/ImageAnalysis
+        You can see examples of this file being used in the ReadtheDocs page:
+        https://npc-image-analysis.readthedocs.io/en/latest/Examples.html
         ''' 
         
 
