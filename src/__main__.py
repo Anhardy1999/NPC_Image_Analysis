@@ -1235,7 +1235,7 @@ class ImageSeg_App():
         ''' Accesses the most recent image created. '''
 
         self.prev_image = self.current_image
-        self.current_image = self.recent_image
+        self.current_image = self.rec_image
         self.viewer.add_image(data = self.current_image, name = "recent image")
         self.text.config(state = "normal")
         self.text.insert(tk.END, "Most recent image restored")
@@ -1244,7 +1244,7 @@ class ImageSeg_App():
     def previous_image(self):
         ''' Accesses the image created prior to the most recent one '''
 
-        self.recent_image  = self.current_image
+        self.rec_image  = self.current_image
         self.current_image = self.prev_image
         self.viewer.add_image(data = self.current_image, name = "previous image")
         self.text.config(state = "normal")
@@ -1255,7 +1255,7 @@ class ImageSeg_App():
     def original_image(self):
         ''' Accesses the original image, esentially resetting the analysis '''
 
-        self.recent_image = self.current_image
+        self.prev_image = self.current_image
         self.current_image = self.main_image
         self.viewer.add_image(data = self.current_image, name = "original image")
         self.text.config(state = "normal")
@@ -1583,7 +1583,7 @@ class ImageSeg_App():
                     self.top_2.configure(bg = "#000000")
                     self.top_2.title("Properties Table")
                     frame_props = Frame(self.top_2, bg = "#000000")
-                    frame_props.grid(row = 0, column = 0, ipadx= 5, ipady= 5)
+                    frame_props.pack()
                     tree = ttk.Treeview(frame_props, show = 'headings', height = '10')
                     
 
